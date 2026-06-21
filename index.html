@@ -4,18 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Сучасна пекарня</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Roboto:ital,wght@0,700;1,700&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <header>
-      <nav>
-        <a href="./index.html">
+<div class="container">   <nav>
+      <a href="./index.html">
           <img src="./images/bakery logo.png" alt="Логотип" />
         </a>
         <ul>
@@ -25,19 +19,24 @@
           <li><a class="link" href="#contacts">Контакти</a></li>
         </ul>
       </nav>
-      <button class="button">Замовити дзвінок</button>
+      <button class="button">Замовити дзвінок</button></div>
     </header>
     <main>
-      <section id="our-tradition">
-        <h1 class="hero-style"><span class="accent">Сучасна</span> пекарня</h1>
+      <section class="hero-section">
+       <div class="container"><h1 class="hero-style"><span class="accent">Сучасна</span> пекарня</h1></div> 
       </section>
       <section>
+     <div class="container"><h2 class="visualli-hidden">Наші переваги</h2>
         <ul class="advantages-list">
-          <li class="advantages-item">Великий попит</li>
+          <li class="advantages-item">Великий попит на ринку</li>
           <li class="advantages-item">Доступні формати</li>
           <li class="advantages-item">Досвідчена команда</li>
-        </ul>
-        <h2 class="section-title">Новий формат традицій</h2>
+        </ul></div>
+      </section>
+<div class="container"><section class="tradition-section section" id="our-tradition">
+   <h2 class="traditions-title section-title" id="our-tradition">
+          Новий формат традицій
+        </h2>
         <p class="traditions-text">
           <span class="accent">Shop Bakery</span> - це пекарня, що взяла
           найраще, це новий формат традицій
@@ -47,10 +46,11 @@
           <span class="accent">5 хвилин і все готово</span>. А ще стильний
           дизайн та висока якість обслуговування
         </p>
-        <img src="./images/baker.jpg" alt="чоловік пекар" />
-      </section>
-      <section id="chef">
-        <h2 class="section-title">
+        <img src="./images/baker.jpg" alt="чоловік пекар" /></div>
+  
+ </section>
+      <section class="section" id="chef">
+       <div class="container"> <h2 class="chefs-title section-title">
           Найкращі <span class="accent">шеф-кухарі</span>
         </h2>
         <ul>
@@ -70,10 +70,10 @@
               <p>Я зроблю для вас унікальну випічку на будь-який смак</p>
             </article>
           </li>
-        </ul>
+        </ul></div>
       </section>
-      <section id="format">
-        <h2 class="section-title">Формати</h2>
+      <section class="section" id="format">
+<div class="container"><h2 class="formats-title section-title">Формати</h2>
         <ul>
           <li>
             <article>
@@ -117,27 +117,29 @@
               </div>
             </article>
           </li>
-        </ul>
+        </ul></div>
       </section>
-      <section id="contacts">
-        <h2 class="section-title">Приєднуйся до мережі пекарень</h2>
+   <div class="container">   <section class="section" id="contacts">
+        <h2 class="contacts-title section-title">
+          Приєднуйся до мережі пекарень
+        </h2>
         <p>Заповни форму, щоб ми зв'язалися з тобою!</p>
+
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d325517.3200276518!2d30.532690549999998!3d50.401898200000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf4ee15a4505%3A0x764931d2170146fe!2z0JrQuNC10LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1781022639692!5m2!1sru!2sua"
-          width="600"
-          height="450"
+          width: 100%
+          max-width="600"
+          max-height="450"
           style="border: 0"
           allowfullscreen=""
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
+        ></iframe>   </div>
       </section>
     </main>
     <footer>
-      <nav>
-        <a href="#">
-          <img src="./images/bakery logo.png" alt="Логотип" />
-        </a>
+<div class="container"> <nav>
+
         <ul>
           <li>
             <a class="link" href="#our-tradition">Наші традиції</a>
@@ -181,6 +183,7 @@
         >
         <p class="adress-copyright">&copy; 2026 Данні захищенні</p>
       </address>
+    </div>
     </footer>
   </body>
 </html>
