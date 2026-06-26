@@ -12,6 +12,7 @@
 
 body {
   color: var(--color-primary-dark);
+  background-color: aqua;
 }
 
 ul {
@@ -40,7 +41,7 @@ ul {
   border-color: var(--color-primary-light);
 }
 
-/* hero-section */
+}
 .hero-style {
   color: var(--color-primary-light);
 }
