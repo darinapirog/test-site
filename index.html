@@ -21,7 +21,7 @@
               <li><a class="link" href="#contacts">Контакти</a></li>
             </ul>
           </nav>
-          <button class="button">Замовити дзвінок</button>
+          <button class="button modal-btn-open" type="button">Замовити дзвінок</button>
         </div>
       </div>
     </header>
@@ -66,23 +66,26 @@
         <section class="section" id="chef">
           <div class="container">
             <h2 class="chefs-title section-title center">
-              Найкращі <span class="accent">шеф-кухарі</span>
+              Наші найкращі <br><span class="accent">шеф-кухарі</span>
             </h2>
             <ul class="chefs-list">
               <li class="chefs-item">
                 <article class="chef-card">
                   <img class="chef-photo" src="./images/nastya-chef.jpg" alt="Nastya chef">
-                <div>  <h3 class="chef-title">Настя</h3>
-                  <p class="chef-text">Привіт! Я Настя</p>
-                  <p class="chef-text">Вже 10 років я створюю <br> смачні ідеї</p>
-                  <p class="chef-text">Я випічу для вас <br>смачні вироби</p>
+                <div>  
+                  <h3 class="chef-title">Настя</h3>
+                <div .class="chef-text"> 
+                  <p>Привіт! Я Настя</p>
+                  <p>Вже 10 років я створюю <br> смачні ідеї</p>
+                  <p>Я випічу для вас <br>смачні вироби</p>
+                </div>
                 </div>
                 </article>
               </li>
               <li class="chefs-item">
                 <article class="chef-card">
                   <img class="chef-photo" src="./images/vlad-chef.jpg" alt="Vlad chef">
-              <div>  
+                <div>  
                   <h3 class="chef-title">Влад</h3>
                   <p class="chef-text">Привіт, я Влад!</p>
                   <p class="chef-text">Мій кондитерський стаж 18 років</p>
@@ -96,7 +99,13 @@
         <section class="section" id="format">
           <div class="container">
             <h2 class="formats-title section-title center">Формати</h2>
-        <!-- <div class="formats-container">    <button class="carousel-button" type="button"></button> -->
+<div class="formats-container">
+           <button class="carousel-button" type="button">
+                <svg  width="16" height="16">
+                <use  href="./images/symbol-defs.svg#icon-arrow-left2">
+                </use>
+                </svg>
+          </button>
             <ul class="formats-list">
               <li class="formats-item">
                 <article class="format-card">
@@ -141,17 +150,27 @@
                 </article>
               </li>
             </ul>
-             <!-- <button class="carousel-button" type="button"></button></div>
-          </div> -->
+            <button class="carousel-button" type="button">
+                <svg  width="16" height="16">
+                <use  href="./images/symbol-defs.svg#icon-arrow-left2">
+                </use>
+                </svg>
+            </button>
+</div>
+            </div>
         </section>
         <div class="container">
-          <section class="section" id="contacts">
-            <h2 class="contacts-title section-title">
+          <section class="contacts-section" id="contacts">
+    <div class="contact-container">      
+       <div class="contact-form"> 
+        <h2 class="contacts-title section-title">
               Приєднуйся до мережі пекарень
             </h2>
             <p>Заповни форму, щоб ми зв'язалися з тобою!</p>
-
+            <!-- form -->
+          </div>
             <iframe
+            class="contact-map"
               src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1301261.3014481491!2d28.2714323!3d50.4313028!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf000b7bee55%3A0xd921159aa8bd5e70!2sBakery!5e0!3m2!1sru!2sua!4v1782593465267!5m2!1sru!2sua"
               width="600"
               height="450"
@@ -160,12 +179,19 @@
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
             ></iframe>
+    </div>
           </section>
-
+          </main>
           <footer class="footer">
             <div class="container">
-              <nav>
-                <ul>
+           <div class="footer-container">  
+             <nav class="footer-nav">
+                 <div class="footer-logo">
+                  <a href="./index.html">
+              <img src="./images/bakery logo.png" alt="Логотип" />
+            </a>
+                 </div>
+                <ul class="footer-menu">
                   <li>
                     <a class="link" href="#our-tradition">Наші традиції</a>
                   </li>
@@ -174,8 +200,8 @@
                   <li><a class="link" href="#contacts">Контакти</a></li>
                 </ul>
               </nav>
-              <address>
-                <ul>
+              <address class="footer-address">
+                <ul class="address-list">
                   <li>
                     <a class="link-adress" href="tel:+380635965478"
                       >+380635965478</a
@@ -183,34 +209,52 @@
                   </li>
                   <li>
                     <a class="link-adress" href="mailto:shopbakery@gmail.com"
-                      >shopbakery@gmail.com</a
-                    >
+                      >shopbakery@gmail.com</a>
                   </li>
                   <li>
                     <a
-                   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1301261.3014481487!2d28.271432269162595!3d50.43130280000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf000b7bee55%3A0xd921159aa8bd5e70!2sBakery!5e0!3m2!1sru!2sua!4v1782593241061!5m2!1sru!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
-                    >
-                  </li>
-                  <li>
-                    <a href="#">
-                      <!-- facebook icon -->
+                  class="link-adress"
+                  href="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1301261.3014481491!2d28.2714323!3d50.4313028!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf000b7bee55%3A0xd921159aa8bd5e70!2sBakery!5e0!3m2!1sru!2sua!4v1782593465267!5m2!1sru!2sua"
+                  target="_blank"
+                       >
+                    Україна, м. Київ
                     </a>
                   </li>
                   <li>
                     <a href="#">
-                      <!-- instagram icon -->
+                <svg class="adress-icon" width="32" height="32">
+                <use  href="./images/symbol-defs.svg#icon-facebook">
+                </use>
+                </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                    <svg class="adress-icon" width="32" height="32">
+                <use  href="./images/symbol-defs.svg#icon-instagram">
+                </use>
+                </svg>
                     </a>
                   </li>
                 </ul>
-                <a class="link-adress" href="#" target="_blank"
+          <div class="adress-info">              
+               <a class="link-adress" href="#" target="_blank"
                   >Політика конфіденційності</a
                 >
                 <p class="adress-copyright">&copy; 2026 Данні захищенні</p>
+              </div>
               </address>
+            </div>
             </div>
           </footer>
         </div>
       </div>
     </main>
+  <div class="backdrop"> 
+     <div class="modal">
+      <button class="modal-btn-close" type="button">Close</button>
+     </div>
+</div>
+<script src="./modal.js"></script>
   </body>
 </html>
